@@ -362,10 +362,11 @@ static char mediaParsingCompletionKey = '0';
     
     @weakify(self)
     [self.timer invalidate];
-    self.timer = [NSTimer bk_scheduleTimerWithTimeInterval:1 repeats:NO usingBlock:^(NSTimer * _Nonnull timer) {
+    
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:1 block:^(NSTimer * _Nonnull timer) {
         @strongify(self)
         self.timeIsUpdate = NO;
-    }];
+    } repeats:NO];
     
     if (self.timeIsUpdate == NO) {
         self.timeIsUpdate = YES;

@@ -5,6 +5,7 @@
 //  Created by JimHuang on 2019/7/21.
 //  Copyright © 2019 jim. All rights reserved.
 //
+#import "DDPPlayNavigationController.h"
 
 #import "SceneDelegate.h"
 #import <Foundation/Foundation.h>
@@ -89,14 +90,19 @@
     // to restore the scene back to its current state.
 }
 
-#if DDPAPPTYPEISMAC
 - (void)scene:(UIScene *)scene openURLContexts:(NSSet<UIOpenURLContext *> *)URLContexts {
+#if DDPAPPTYPEISMAC
     let context = URLContexts.anyObject;
     id<DDPMessageProtocol>model = [context.URL makeMessage];
     [[DDPMessageManager sharedManager] receiveMessage:model];
+#else
+    UIOpenURLContext *context = URLContexts.anyObject;
+    DDPFile *file = [[DDPFile alloc] initWithFileURL:context.URL type:DDPFileTypeDocument];
+    [DDPMethod matchFile:file completion:nil];
+#endif
 }
 
-
+#if DDPAPPTYPEISMAC
 #pragma mark - NSToolbarDelegate
 - (nullable NSToolbarItem *)toolbar:(NSToolbar *)toolbar itemForItemIdentifier:(NSToolbarItemIdentifier)itemIdentifier willBeInsertedIntoToolbar:(BOOL)flag {
     if ([itemIdentifier isEqualToString:@"main"]) {
