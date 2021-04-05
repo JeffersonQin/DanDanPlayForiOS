@@ -14,19 +14,23 @@ PODS:
   - AFNetworking/Serialization (4.0.1)
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
-  - BlocksKit (2.2.5):
-    - BlocksKit/All (= 2.2.5)
-  - BlocksKit/All (2.2.5):
+  - BlocksKit (2.2.6):
+    - BlocksKit/All (= 2.2.6)
+  - BlocksKit/All (2.2.6):
     - BlocksKit/Core
     - BlocksKit/DynamicDelegate
     - BlocksKit/MessageUI
+    - BlocksKit/QuickLook
     - BlocksKit/UIKit
-  - BlocksKit/Core (2.2.5)
-  - BlocksKit/DynamicDelegate (2.2.5)
-  - BlocksKit/MessageUI (2.2.5):
+  - BlocksKit/Core (2.2.6)
+  - BlocksKit/DynamicDelegate (2.2.6)
+  - BlocksKit/MessageUI (2.2.6):
     - BlocksKit/Core
     - BlocksKit/DynamicDelegate
-  - BlocksKit/UIKit (2.2.5):
+  - BlocksKit/QuickLook (2.2.6):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - BlocksKit/UIKit (2.2.6):
     - BlocksKit/Core
     - BlocksKit/DynamicDelegate
   - Bugly (2.5.71)
@@ -85,7 +89,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
-  - BlocksKit
+  - BlocksKit (from `LocalPods/BlocksKit`)
   - Bugly
   - CocoaHTTPServer
   - CocoaLumberjack
@@ -122,7 +126,6 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - AFNetworking
-    - BlocksKit
     - Bugly
     - CocoaAsyncSocket
     - CocoaHTTPServer
@@ -154,6 +157,8 @@ SPEC REPOS:
     - YYModel
 
 EXTERNAL SOURCES:
+  BlocksKit:
+    :path: LocalPods/BlocksKit
   DDPEncrypt:
     :path: LocalPods/Encrypt
   DDPShare:
@@ -170,7 +175,7 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
-  BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
+  BlocksKit: 5fae06c13638d9fdb0bbddca3dabfe8f5aa735c5
   Bugly: fd066c75c4a0eca1440f9b6a84bd37d51bfc85ac
   CocoaAsyncSocket: 694058e7c0ed05a9e217d1b3c7ded962f4180845
   CocoaHTTPServer: 5624681fc3473d43b18202f635f9b3abb013b530
@@ -205,6 +210,6 @@ SPEC CHECKSUMS:
   YYUtility: 1d8f92d46c386eeaf7ba08b5e4636f02c1ed6e33
   YYWebImage: 0dd00e631dd0ea984a7ecb07d4c42af0ab34803b
 
-PODFILE CHECKSUM: 7f0e1e182e934a338afe558542c5bfccf80bc66e
+PODFILE CHECKSUM: 6f083ce2ebe982fc28269137494998005ede40ad
 
-COCOAPODS: 1.10.0
+COCOAPODS: 1.10.1

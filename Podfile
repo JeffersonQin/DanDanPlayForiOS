@@ -26,7 +26,7 @@ abstract_target 'DDPlay_Target' do
     pod 'YYKeyboardManager'
     pod 'MGSwipeTableCell'
     pod 'iCarousel'
-    pod 'BlocksKit'#, :path => 'LocalPods/BlocksKit'
+    pod 'BlocksKit', :path => 'LocalPods/BlocksKit'
     pod 'YYWebImage', :git => 'https://github.com/sunsx9316/YYWebImage_UIKitForMac.git'
 
     pod 'DDPShare', :path => 'LocalPods/DDPShare'
