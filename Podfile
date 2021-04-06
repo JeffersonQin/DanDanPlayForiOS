@@ -66,7 +66,7 @@ abstract_target 'iOS_Only' do
 end
 
 
-    target 'DDPlay_ToMac' do
+target 'DDPlay_ToMac' do
     # pod 'AFNetworking', :git => 'https://github.com/sunsx9316/AFNetworking_UIKitForMac.git'
     pod 'CocoaLumberjack'
     pod 'DDPShare', :path => 'LocalPods/DDPShare'
