@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		01E030B4256BAB9800871351 /* DDPBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 8930347D23E08C5E00BE1049 /* DDPBase.m */; };
+		20640C9D261D4DE6009088D9 /* JQDDPLinkFileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20640C9C261D4DE6009088D9 /* JQDDPLinkFileTableViewController.swift */; };
 		258DB85FF6A45F2A6FD3578E /* libPods-DDPlay_Target-iOS_Only-DDPlay_Review.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53E2B4DF7BAFF1EBB7784AEF /* libPods-DDPlay_Target-iOS_Only-DDPlay_Review.a */; };
 		2A4350E1B6A1BF35E91545BA /* libPods-DDPlay_Target-iOS_Only-DDPlay.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 361F511D4F4E8CE3A646D000 /* libPods-DDPlay_Target-iOS_Only-DDPlay.a */; };
 		3EA04C948B05C030A98E33C6 /* libPods-DDPlay_Target-DDPlay_ToMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C8983450A097DFD30A2DBAB6 /* libPods-DDPlay_Target-DDPlay_ToMac.a */; };
@@ -899,6 +900,8 @@
 
 /* Begin PBXFileReference section */
 		1D64E2391276E65AC4B7DCB6 /* Pods-DDPlay_Target-DDPlay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDPlay_Target-DDPlay.release.xcconfig"; path = "Target Support Files/Pods-DDPlay_Target-DDPlay/Pods-DDPlay_Target-DDPlay.release.xcconfig"; sourceTree = "<group>"; };
+		20640C9B261D4DE5009088D9 /* DDPlay-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DDPlay-Bridging-Header.h"; sourceTree = "<group>"; };
+		20640C9C261D4DE6009088D9 /* JQDDPLinkFileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JQDDPLinkFileTableViewController.swift; sourceTree = "<group>"; };
 		2200A8C5E60D84DF1B07F2C2 /* Pods-DDPlay_Target-iOS_Only-DDPlay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDPlay_Target-iOS_Only-DDPlay.debug.xcconfig"; path = "Target Support Files/Pods-DDPlay_Target-iOS_Only-DDPlay/Pods-DDPlay_Target-iOS_Only-DDPlay.debug.xcconfig"; sourceTree = "<group>"; };
 		2344548B202E51930721C208 /* Pods-DDPlay_Target-iOS_Only-DDPlay_2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDPlay_Target-iOS_Only-DDPlay_2.release.xcconfig"; path = "Target Support Files/Pods-DDPlay_Target-iOS_Only-DDPlay_2/Pods-DDPlay_Target-iOS_Only-DDPlay_2.release.xcconfig"; sourceTree = "<group>"; };
 		361F511D4F4E8CE3A646D000 /* libPods-DDPlay_Target-iOS_Only-DDPlay.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DDPlay_Target-iOS_Only-DDPlay.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1632,6 +1635,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		20640C9A261D4CE6009088D9 /* JQUpdate */ = {
+			isa = PBXGroup;
+			children = (
+				20640C9C261D4DE6009088D9 /* JQDDPLinkFileTableViewController.swift */,
+				20640C9B261D4DE5009088D9 /* DDPlay-Bridging-Header.h */,
+			);
+			path = JQUpdate;
+			sourceTree = "<group>";
+		};
 		890446811FE558D8006872A0 /* Serializer */ = {
 			isa = PBXGroup;
 			children = (
@@ -2553,6 +2565,7 @@
 				89E3F60C1E5852E5007AB1BD /* Tools */,
 				89E3F6041E58519B007AB1BD /* Config */,
 				89E3F5EB1E585135007AB1BD /* NetManager */,
+				20640C9A261D4CE6009088D9 /* JQUpdate */,
 				89E3F5BF1E5829BD007AB1BD /* AppDelegate.h */,
 				89E3F5C01E5829BD007AB1BD /* AppDelegate.mm */,
 				89A1BF5622E4BD75000149CF /* SceneDelegate.h */,
@@ -2961,6 +2974,7 @@
 					};
 					89E3F5B81E5829BD007AB1BD = {
 						CreatedOnToolsVersion = 7.2.1;
+						LastSwiftMigration = 1240;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 0;
@@ -4015,6 +4029,7 @@
 				89D8F8191EB09CAC009329AA /* DDPAboutUsViewController.m in Sources */,
 				8975F1E61FC86DE700C945EC /* LAContext+Tools.m in Sources */,
 				894C64921F691004003C7888 /* DDPLinkDownloadTaskCollection.m in Sources */,
+				20640C9D261D4DE6009088D9 /* JQDDPLinkFileTableViewController.swift in Sources */,
 				897858F31F6C136300010690 /* DDPLinkVideoModel.m in Sources */,
 				89E3F6011E585135007AB1BD /* DDPSearchNetManagerOperation.m in Sources */,
 				89314B201F4690C0002C1AEA /* DDPFileManagerEditView.m in Sources */,
@@ -4566,6 +4581,7 @@
 			baseConfigurationReference = 2200A8C5E60D84DF1B07F2C2 /* Pods-DDPlay_Target-iOS_Only-DDPlay.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
 				CODE_SIGN_ENTITLEMENTS = DDPlay.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -4685,6 +4701,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = top.gyrojeff.dandanplay.distribution.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "DanDanPlayForiOS/JQUpdate/DDPlay-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -4694,6 +4713,7 @@
 			baseConfigurationReference = D840A3B433C226DB0BFBC037 /* Pods-DDPlay_Target-iOS_Only-DDPlay.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
 				CODE_SIGN_ENTITLEMENTS = DDPlay.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -4813,6 +4833,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = top.gyrojeff.dandanplay.distribution.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "DanDanPlayForiOS/JQUpdate/DDPlay-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
