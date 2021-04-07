@@ -175,10 +175,17 @@
 #if !DDPAPPTYPE
             //已经登录
             if ([DDPCacheManager shareCacheManager].linkInfo) {
-                DDPLinkFileManagerViewController *vc = [[DDPLinkFileManagerViewController alloc] init];
-                vc.file = ddp_getANewLinkRootFile();
-                vc.hidesBottomBarWhenPushed = YES;
-                [self.navigationController pushViewController:vc animated:YES];
+                UIAlertController *versionChoosingVC = [UIAlertController alertControllerWithTitle:@"选择远程连接查看器版本" message:nil preferredStyle:UIAlertControllerStyleAlert];
+                [versionChoosingVC addAction:[UIAlertAction actionWithTitle:@"v1" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+                    DDPLinkFileManagerViewController *vc = [[DDPLinkFileManagerViewController alloc] init];
+                    vc.file = ddp_getANewLinkRootFile();
+                    vc.hidesBottomBarWhenPushed = YES;
+                    [self.navigationController pushViewController:vc animated:YES];
+                }]];
+                [versionChoosingVC addAction:[UIAlertAction actionWithTitle:@"v2 (推荐)" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                    //跳转到自己的界面
+                }]];
+                [self presentViewController:versionChoosingVC animated:YES completion:nil];
             }
             else {
                 DDPQRScannerViewController *vc = [[DDPQRScannerViewController alloc] init];
