@@ -3,11 +3,30 @@
 //  DanDanPlayForiOS
 //
 //  Created by JeffersonQin on 2021/4/7.
-//  Copyright © 2021 JimHuang. All rights reserved.
+//  Copyright © 2021 JeffersonQin. All rights reserved.
 //
 
 #ifndef DDPlay_Bridging_Header_h
 #define DDPlay_Bridging_Header_h
+#define __cplusplus
 
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
+#import "DDPLibrary.h"
+#import "DDPLinkInfo.h"
+#import "DDPDanmakuCollection.h"
+#import "DDPVideoModel.h"
+#import "DDPCacheManager.h"
+#import "DDPToolsManager.h"
+#import "DDPUser.h"
+#import "DDPFile.h"
+#import "DDPSMBFile.h"
+#import "DDPSMBInfo.h"
+#import "DDPLinkFile.h"
+#import "DDPWebDAVFile.h"
+#import "DDPWebDAVLoginInfo.h"
+#import "DDPLinkNetManagerOperation.h"
+#import "JQDDPLinkTransmitter.h"
 
 #endif /* DDPlay_Bridging_Header_h */

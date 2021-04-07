@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		01E030B4256BAB9800871351 /* DDPBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 8930347D23E08C5E00BE1049 /* DDPBase.m */; };
+		205D12B8261DD25E00D42CE5 /* JQDDPLinkTransmitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 205D12B7261DD25E00D42CE5 /* JQDDPLinkTransmitter.m */; };
 		20640C9D261D4DE6009088D9 /* JQDDPLinkFileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20640C9C261D4DE6009088D9 /* JQDDPLinkFileTableViewController.swift */; };
 		20640CAE261DB124009088D9 /* JQDDPLinkFileRedirector.m in Sources */ = {isa = PBXBuildFile; fileRef = 20640CAD261DB124009088D9 /* JQDDPLinkFileRedirector.m */; };
 		258DB85FF6A45F2A6FD3578E /* libPods-DDPlay_Target-iOS_Only-DDPlay_Review.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53E2B4DF7BAFF1EBB7784AEF /* libPods-DDPlay_Target-iOS_Only-DDPlay_Review.a */; };
@@ -901,6 +902,8 @@
 
 /* Begin PBXFileReference section */
 		1D64E2391276E65AC4B7DCB6 /* Pods-DDPlay_Target-DDPlay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDPlay_Target-DDPlay.release.xcconfig"; path = "Target Support Files/Pods-DDPlay_Target-DDPlay/Pods-DDPlay_Target-DDPlay.release.xcconfig"; sourceTree = "<group>"; };
+		205D12B7261DD25E00D42CE5 /* JQDDPLinkTransmitter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JQDDPLinkTransmitter.m; sourceTree = "<group>"; };
+		205D12BA261DD28000D42CE5 /* JQDDPLinkTransmitter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JQDDPLinkTransmitter.h; sourceTree = "<group>"; };
 		20640C9C261D4DE6009088D9 /* JQDDPLinkFileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JQDDPLinkFileTableViewController.swift; sourceTree = "<group>"; };
 		20640CA8261D8468009088D9 /* DDPlay-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DDPlay-Bridging-Header.h"; sourceTree = "<group>"; };
 		20640CAD261DB124009088D9 /* JQDDPLinkFileRedirector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JQDDPLinkFileRedirector.m; sourceTree = "<group>"; };
@@ -1661,6 +1664,8 @@
 			children = (
 				20640CAD261DB124009088D9 /* JQDDPLinkFileRedirector.m */,
 				20640CB1261DB1B9009088D9 /* JQDDPLinkFileRedirector.h */,
+				205D12B7261DD25E00D42CE5 /* JQDDPLinkTransmitter.m */,
+				205D12BA261DD28000D42CE5 /* JQDDPLinkTransmitter.h */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -4006,6 +4011,7 @@
 				89A42EC01EA5F09500FA0DF3 /* DDPVideoModel.m in Sources */,
 				8911385022E3665600ED15E3 /* DDPPlayerViewController.m in Sources */,
 				89A467971F162DDA001840C7 /* DDPDefaultPageViewController.m in Sources */,
+				205D12B8261DD25E00D42CE5 /* JQDDPLinkTransmitter.m in Sources */,
 				89AE37CC1F628C82008D06CF /* CALayer+Tools.m in Sources */,
 				8911386022E3665600ED15E3 /* DDPPlayerControlPlayModeTableViewCell.m in Sources */,
 				8911385C22E3665600ED15E3 /* DDPPlayerControlAnimater.m in Sources */,
@@ -4617,6 +4623,7 @@
 					"$(inherited)",
 					"$(PROJECT_NAME)/Vender",
 				);
+				GCC_INPUT_FILETYPE = automatic;
 				GCC_PREFIX_HEADER = "${PROJECT_NAME}/Config/DDPPrefixHeader.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -4750,6 +4757,7 @@
 					"$(inherited)",
 					"$(PROJECT_NAME)/Vender",
 				);
+				GCC_INPUT_FILETYPE = automatic;
 				GCC_PREFIX_HEADER = "${PROJECT_NAME}/Config/DDPPrefixHeader.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",

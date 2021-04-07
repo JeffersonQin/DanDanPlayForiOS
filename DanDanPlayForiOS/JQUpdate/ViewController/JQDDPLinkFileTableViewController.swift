@@ -12,7 +12,24 @@ class JQDDPLinkFileTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.navigationController?.navigationItem.hidesBackButton = false
+        self.navigationController?.navigationBar.tintColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        
+        if let ipAddress = JQDDPLinkTransmitter.getLinkInfo().selectedIpAdress {
+            DDPLinkNetManagerOperation.linkLibrary(withIpAdress: ipAddress) { (raw_collection, raw_part_error) in
+                let _root_lib = DDPLibrary.init()
+                _root_lib.fileType = .folder
+                _root_lib.path = "/"
+                let _root_file = DDPLinkFile.init(libraryFile: _root_lib)
+                JQDDPLinkTransmitter.getToolsManager().startDiscovererFile(withLinkParentFile: _root_file, completion: { (libFile, lib_part_error) in
+                    print("root file: \(libFile)")
+                    print("raw file: \(raw_collection?.collection)")
+                })
+            }
+        } else {
+            print("error when obtaining ip address")
+        }
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
