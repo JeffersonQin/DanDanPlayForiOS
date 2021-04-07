@@ -17,6 +17,8 @@
 #import "DDPBaseTableView.h"
 #import "DDPEdgeButton.h"
 
+#import "../../../JQUpdate/Tools/JQDDPLinkFileRedirector.h"
+
 @interface DDPLinkFileManagerViewController ()<UITableViewDelegate, UITableViewDataSource, DZNEmptyDataSetSource, DZNEmptyDataSetDelegate, DDPCacheManagerDelagate>
 @property (strong, nonatomic) DDPBaseTableView *tableView;
 @property (strong, nonatomic) UIImage *folderImg;
@@ -169,20 +171,21 @@
         @strongify(self)
         if (!self) return;
         
-        NSMutableArray *arr = [self.navigationController.viewControllers mutableCopy];
-        [arr removeLastObject];
-        
         UIAlertController *versionChoosingVC = [UIAlertController alertControllerWithTitle:@"选择远程连接查看器版本" message:nil preferredStyle:UIAlertControllerStyleAlert];
         [versionChoosingVC addAction:[UIAlertAction actionWithTitle:@"v1" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
             //连接成功直接跳转到列表
             DDPLinkFileManagerViewController *avc = [[DDPLinkFileManagerViewController alloc] init];
             avc.file = ddp_getANewLinkRootFile();
             avc.hidesBottomBarWhenPushed = YES;
+            
+            NSMutableArray *arr = [self.navigationController.viewControllers mutableCopy];
+            [arr removeLastObject];
             [arr addObject:avc];
             [self.navigationController setViewControllers:arr animated:YES];
         }]];
         [versionChoosingVC addAction:[UIAlertAction actionWithTitle:@"v2 (推荐)" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             //跳转到自己的界面
+            [JQDDPLinkFileRedirector redirectFrom:self push:NO];
         }]];
         [self presentViewController:versionChoosingVC animated:YES completion:nil];
     };
