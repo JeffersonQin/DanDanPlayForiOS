@@ -191,13 +191,19 @@
                     NSMutableArray *arr = [self.navigationController.viewControllers mutableCopy];
                     [arr removeLastObject];
                     
-                    
-                    //连接成功直接跳转到列表
-                    DDPLinkFileManagerViewController *avc = [[DDPLinkFileManagerViewController alloc] init];
-                    avc.file = ddp_getANewLinkRootFile();
-                    avc.hidesBottomBarWhenPushed = YES;
-                    [arr addObject:avc];
-                    [self.navigationController setViewControllers:arr animated:YES];
+                    UIAlertController *versionChoosingVC = [UIAlertController alertControllerWithTitle:@"选择远程连接查看器版本" message:nil preferredStyle:UIAlertControllerStyleAlert];
+                    [versionChoosingVC addAction:[UIAlertAction actionWithTitle:@"v1" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+                        //连接成功直接跳转到列表
+                        DDPLinkFileManagerViewController *avc = [[DDPLinkFileManagerViewController alloc] init];
+                        avc.file = ddp_getANewLinkRootFile();
+                        avc.hidesBottomBarWhenPushed = YES;
+                        [arr addObject:avc];
+                        [self.navigationController setViewControllers:arr animated:YES];
+                    }]];
+                    [versionChoosingVC addAction:[UIAlertAction actionWithTitle:@"v2 (推荐)" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                        //跳转到自己的界面
+                    }]];
+                    [self presentViewController:versionChoosingVC animated:YES completion:nil];
                 };
                 [self.navigationController pushViewController:vc animated:YES];
             }
