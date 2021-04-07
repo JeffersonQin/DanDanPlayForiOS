@@ -9,6 +9,20 @@
 /* Begin PBXBuildFile section */
 		01E030B4256BAB9800871351 /* DDPBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 8930347D23E08C5E00BE1049 /* DDPBase.m */; };
 		205D12B8261DD25E00D42CE5 /* JQDDPLinkTransmitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 205D12B7261DD25E00D42CE5 /* JQDDPLinkTransmitter.m */; };
+		205D1337261DDFB100D42CE5 /* JQAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205D1327261DDFB100D42CE5 /* JQAnimationController.swift */; };
+		205D1338261DDFB100D42CE5 /* JQSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205D1328261DDFB100D42CE5 /* JQSearchBar.swift */; };
+		205D1339261DDFB100D42CE5 /* JQButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205D1329261DDFB100D42CE5 /* JQButton.swift */; };
+		205D133A261DDFB100D42CE5 /* JQOldSideView_ControllerSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205D132A261DDFB100D42CE5 /* JQOldSideView_ControllerSet.swift */; };
+		205D133B261DDFB100D42CE5 /* JQAlertViewControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205D132B261DDFB100D42CE5 /* JQAlertViewControl.swift */; };
+		205D133C261DDFB100D42CE5 /* UIntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205D132D261DDFB100D42CE5 /* UIntExtension.swift */; };
+		205D133D261DDFB100D42CE5 /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205D132E261DDFB100D42CE5 /* IntExtension.swift */; };
+		205D133E261DDFB100D42CE5 /* CharacterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205D132F261DDFB100D42CE5 /* CharacterExtension.swift */; };
+		205D133F261DDFB100D42CE5 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205D1330261DDFB100D42CE5 /* StringExtension.swift */; };
+		205D1340261DDFB100D42CE5 /* UITextViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205D1332261DDFB100D42CE5 /* UITextViewExtension.swift */; };
+		205D1341261DDFB100D42CE5 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205D1333261DDFB100D42CE5 /* UIViewControllerExtension.swift */; };
+		205D1342261DDFB100D42CE5 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205D1334261DDFB100D42CE5 /* UITableViewExtension.swift */; };
+		205D1343261DDFB100D42CE5 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205D1335261DDFB100D42CE5 /* UIViewExtension.swift */; };
+		205D1344261DDFB100D42CE5 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205D1336261DDFB100D42CE5 /* UIImageExtension.swift */; };
 		20640C9D261D4DE6009088D9 /* JQDDPLinkFileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20640C9C261D4DE6009088D9 /* JQDDPLinkFileTableViewController.swift */; };
 		20640CAE261DB124009088D9 /* JQDDPLinkFileRedirector.m in Sources */ = {isa = PBXBuildFile; fileRef = 20640CAD261DB124009088D9 /* JQDDPLinkFileRedirector.m */; };
 		258DB85FF6A45F2A6FD3578E /* libPods-DDPlay_Target-iOS_Only-DDPlay_Review.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53E2B4DF7BAFF1EBB7784AEF /* libPods-DDPlay_Target-iOS_Only-DDPlay_Review.a */; };
@@ -904,6 +918,20 @@
 		1D64E2391276E65AC4B7DCB6 /* Pods-DDPlay_Target-DDPlay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDPlay_Target-DDPlay.release.xcconfig"; path = "Target Support Files/Pods-DDPlay_Target-DDPlay/Pods-DDPlay_Target-DDPlay.release.xcconfig"; sourceTree = "<group>"; };
 		205D12B7261DD25E00D42CE5 /* JQDDPLinkTransmitter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JQDDPLinkTransmitter.m; sourceTree = "<group>"; };
 		205D12BA261DD28000D42CE5 /* JQDDPLinkTransmitter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JQDDPLinkTransmitter.h; sourceTree = "<group>"; };
+		205D1327261DDFB100D42CE5 /* JQAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JQAnimationController.swift; sourceTree = "<group>"; };
+		205D1328261DDFB100D42CE5 /* JQSearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JQSearchBar.swift; sourceTree = "<group>"; };
+		205D1329261DDFB100D42CE5 /* JQButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JQButton.swift; sourceTree = "<group>"; };
+		205D132A261DDFB100D42CE5 /* JQOldSideView_ControllerSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JQOldSideView_ControllerSet.swift; sourceTree = "<group>"; };
+		205D132B261DDFB100D42CE5 /* JQAlertViewControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JQAlertViewControl.swift; sourceTree = "<group>"; };
+		205D132D261DDFB100D42CE5 /* UIntExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIntExtension.swift; sourceTree = "<group>"; };
+		205D132E261DDFB100D42CE5 /* IntExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntExtension.swift; sourceTree = "<group>"; };
+		205D132F261DDFB100D42CE5 /* CharacterExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterExtension.swift; sourceTree = "<group>"; };
+		205D1330261DDFB100D42CE5 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		205D1332261DDFB100D42CE5 /* UITextViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextViewExtension.swift; sourceTree = "<group>"; };
+		205D1333261DDFB100D42CE5 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		205D1334261DDFB100D42CE5 /* UITableViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
+		205D1335261DDFB100D42CE5 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		205D1336261DDFB100D42CE5 /* UIImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 		20640C9C261D4DE6009088D9 /* JQDDPLinkFileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JQDDPLinkFileTableViewController.swift; sourceTree = "<group>"; };
 		20640CA8261D8468009088D9 /* DDPlay-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DDPlay-Bridging-Header.h"; sourceTree = "<group>"; };
 		20640CAD261DB124009088D9 /* JQDDPLinkFileRedirector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JQDDPLinkFileRedirector.m; sourceTree = "<group>"; };
@@ -1641,6 +1669,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		205D1325261DDFB100D42CE5 /* JQVendor */ = {
+			isa = PBXGroup;
+			children = (
+				205D1326261DDFB100D42CE5 /* JQViews&Controllers */,
+				205D132C261DDFB100D42CE5 /* DataTypeExtension */,
+				205D1331261DDFB100D42CE5 /* SystemUIExtensions */,
+			);
+			path = JQVendor;
+			sourceTree = "<group>";
+		};
+		205D1326261DDFB100D42CE5 /* JQViews&Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				205D1327261DDFB100D42CE5 /* JQAnimationController.swift */,
+				205D1328261DDFB100D42CE5 /* JQSearchBar.swift */,
+				205D1329261DDFB100D42CE5 /* JQButton.swift */,
+				205D132A261DDFB100D42CE5 /* JQOldSideView_ControllerSet.swift */,
+				205D132B261DDFB100D42CE5 /* JQAlertViewControl.swift */,
+			);
+			path = "JQViews&Controllers";
+			sourceTree = "<group>";
+		};
+		205D132C261DDFB100D42CE5 /* DataTypeExtension */ = {
+			isa = PBXGroup;
+			children = (
+				205D132D261DDFB100D42CE5 /* UIntExtension.swift */,
+				205D132E261DDFB100D42CE5 /* IntExtension.swift */,
+				205D132F261DDFB100D42CE5 /* CharacterExtension.swift */,
+				205D1330261DDFB100D42CE5 /* StringExtension.swift */,
+			);
+			path = DataTypeExtension;
+			sourceTree = "<group>";
+		};
+		205D1331261DDFB100D42CE5 /* SystemUIExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				205D1332261DDFB100D42CE5 /* UITextViewExtension.swift */,
+				205D1333261DDFB100D42CE5 /* UIViewControllerExtension.swift */,
+				205D1334261DDFB100D42CE5 /* UITableViewExtension.swift */,
+				205D1335261DDFB100D42CE5 /* UIViewExtension.swift */,
+				205D1336261DDFB100D42CE5 /* UIImageExtension.swift */,
+			);
+			path = SystemUIExtensions;
+			sourceTree = "<group>";
+		};
 		20640C9A261D4CE6009088D9 /* JQUpdate */ = {
 			isa = PBXGroup;
 			children = (
@@ -2592,6 +2665,7 @@
 				89E3F6041E58519B007AB1BD /* Config */,
 				89E3F5EB1E585135007AB1BD /* NetManager */,
 				20640C9A261D4CE6009088D9 /* JQUpdate */,
+				205D1325261DDFB100D42CE5 /* JQVendor */,
 				89E3F5BF1E5829BD007AB1BD /* AppDelegate.h */,
 				89E3F5C01E5829BD007AB1BD /* AppDelegate.mm */,
 				89A1BF5622E4BD75000149CF /* SceneDelegate.h */,
@@ -3815,6 +3889,7 @@
 				89929FFB1FBC6903009FDB06 /* DDPHttpReceiveTableViewCell.m in Sources */,
 				898C187E2168F06000AE7484 /* DDPSearchAnimeDetailsCollection.m in Sources */,
 				89A42EA81EA5BB9D00FA0DF3 /* DDPCommentNetManagerOperation.m in Sources */,
+				205D133A261DDFB100D42CE5 /* JQOldSideView_ControllerSet.swift in Sources */,
 				89EC0E5C1F2D812A004D3C12 /* DDPHelpViewController.m in Sources */,
 				8946D52B1EB6D38800161833 /* DDPFileManagerBaseViewCell.m in Sources */,
 				8928E35421B81B68007BA84C /* HomePageSearchTableViewCell.m in Sources */,
@@ -3828,6 +3903,7 @@
 				891C22F41F0A296000B4661F /* DDPSMBFileViewController.m in Sources */,
 				89BF74C11F612F0F00D40F07 /* DDPDMHYSearchCollection.m in Sources */,
 				898C18482166107300AE7484 /* UICollectionView+DDPTools.m in Sources */,
+				205D1338261DDFB100D42CE5 /* JQSearchBar.swift in Sources */,
 				89657F2B1F7243310003AF96 /* UIBarButtonItem+Tools.m in Sources */,
 				8916C7B91EA85BC900A2233D /* DDPMatchViewController.m in Sources */,
 				899F5FA31F2349F20068A1DB /* DDPSMBLoginHeaderView.m in Sources */,
@@ -3835,6 +3911,7 @@
 				899F5F9D1F22F3100068A1DB /* DDPSMBFile.m in Sources */,
 				8928E35F21B81B68007BA84C /* HomePageBangumiProgressTableViewCell.m in Sources */,
 				89A42EAB1EA5E10F00FA0DF3 /* DDPDanmakuCollection.m in Sources */,
+				205D1341261DDFB100D42CE5 /* UIViewControllerExtension.swift in Sources */,
 				89DD051B1F6AC18C00051A96 /* DDPLibrary.m in Sources */,
 				89CD85B01F68F62900E7D841 /* DDPLinkWelcome.m in Sources */,
 				89BE4B09201C4D310009A5FF /* DDPLinkInfo+DB.mm in Sources */,
@@ -3851,6 +3928,7 @@
 				8911387C22E3665600ED15E3 /* DDPPlayerSendDanmakuConfigView.m in Sources */,
 				89F9121C24549F620013EC3E /* DDPWebDAVLoginInfo.m in Sources */,
 				895CA8AD1FDD067900EF52BB /* DDPPlayHistoryNetManagerOperation.m in Sources */,
+				205D1343261DDFB100D42CE5 /* UIViewExtension.swift in Sources */,
 				890446801FE55567006872A0 /* UIColor+Tools.m in Sources */,
 				89350B131EAB0DA000072DA5 /* DDPBlurView.m in Sources */,
 				89BE4B0F201C51250009A5FF /* DDPCacheManager+DB.mm in Sources */,
@@ -3882,6 +3960,7 @@
 				89AE37B41F6262BD008D06CF /* DDPAttentionListViewController.m in Sources */,
 				890D9B701FC4677900E34275 /* DDPSMBFileHashCache.m in Sources */,
 				89F5C82D1EAF10A500676361 /* NSString+Tools.m in Sources */,
+				205D133B261DDFB100D42CE5 /* JQAlertViewControl.swift in Sources */,
 				8955063A21C2990D006E35D9 /* DDPNewBanner.m in Sources */,
 				89A467941F162C31001840C7 /* DDPFileViewController.m in Sources */,
 				8911385222E3665600ED15E3 /* DDPPlayerConfigPanelViewController.m in Sources */,
@@ -3893,8 +3972,10 @@
 				89350B081EAAFB9900072DA5 /* DDPMediaPlayer.m in Sources */,
 				8916C7C21EA89A8A00A2233D /* DDPMatchTitleTableViewCell.m in Sources */,
 				89BF74CA1F6132DE00D40F07 /* DDPDMHYParse.m in Sources */,
+				205D1339261DDFB100D42CE5 /* JQButton.swift in Sources */,
 				89753D5E1F8D07EE0036C0AB /* DDPBaseScrollView.m in Sources */,
 				8928E37821B81F3E007BA84C /* DDPQRScannerHistoryView.m in Sources */,
+				205D133E261DDFB100D42CE5 /* CharacterExtension.swift in Sources */,
 				8928E36521B81B68007BA84C /* DDPNewHomePagePackageViewController.m in Sources */,
 				89E3F6191E58552D007AB1BD /* UIButton+Tools.m in Sources */,
 				8928E35821B81B68007BA84C /* HomePageSearchFilterModel.m in Sources */,
@@ -3909,6 +3990,7 @@
 				8937D0AE2156BCAE00D0E17C /* DDPBaseNavigationBar.m in Sources */,
 				891EC6BC1F66DA7400431766 /* DDPEdgeTextField.m in Sources */,
 				899551131EACA62800AE04BC /* DDPBaseDanmaku+Tools.m in Sources */,
+				205D133D261DDFB100D42CE5 /* IntExtension.swift in Sources */,
 				89DDCFB41F2A3EA6007B83CA /* DDPBaseWebViewController.m in Sources */,
 				89929FFE1FBC6A76009FDB06 /* DDPHttpReceive.m in Sources */,
 				01E030B4256BAB9800871351 /* DDPBase.m in Sources */,
@@ -3939,6 +4021,7 @@
 				8911388C22E3665600ED15E3 /* DDPPlayerSubTitleIndexViewMediator.m in Sources */,
 				8911388E22E3665600ED15E3 /* DDPPlayerSendDanmakuViewController.m in Sources */,
 				89E834291F1E5A5400E781EB /* DDPSMBVideoModel.m in Sources */,
+				205D133F261DDFB100D42CE5 /* StringExtension.swift in Sources */,
 				89F9121624549DA20013EC3E /* DDPWebDAVVideoModel.m in Sources */,
 				894AE14F21172BD90023DED4 /* DDPControlVideoViewController.m in Sources */,
 				8B847BFE216C6A0300DC8623 /* YYPhotoBrowseView.m in Sources */,
@@ -3973,6 +4056,7 @@
 				89AE37B71F626531008D06CF /* DDPFavorite.m in Sources */,
 				8911386422E3665600ED15E3 /* DDPPlayerControlHeaderView.m in Sources */,
 				8928E34921B81B68007BA84C /* DDPNewHomePageViewController.m in Sources */,
+				205D1342261DDFB100D42CE5 /* UITableViewExtension.swift in Sources */,
 				89CD85AD1F68F55B00E7D841 /* DDPLinkInfo.m in Sources */,
 				89988D2D1F5AC0E0001413BE /* DDPFavoriteNetManagerOperation.m in Sources */,
 				894CBA9D1E6BC8D20021253F /* DDPMainViewController.m in Sources */,
@@ -4017,6 +4101,8 @@
 				8911385C22E3665600ED15E3 /* DDPPlayerControlAnimater.m in Sources */,
 				8911385822E3665600ED15E3 /* DDPPlayerDanmakuControlModel.m in Sources */,
 				89409F921FE4EC6500704F33 /* DDPMethod.m in Sources */,
+				205D133C261DDFB100D42CE5 /* UIntExtension.swift in Sources */,
+				205D1340261DDFB100D42CE5 /* UITextViewExtension.swift in Sources */,
 				8928E37721B81F3E007BA84C /* DDPQRScannerHistoryTableViewCell.m in Sources */,
 				89A42EB71EA5EB4500FA0DF3 /* DDPRelatedNetManagerOperation.m in Sources */,
 				894955ED21BEC01A00C9D923 /* DDPLoginViewController.m in Sources */,
@@ -4041,9 +4127,11 @@
 				89E3F5BE1E5829BD007AB1BD /* main.m in Sources */,
 				8955063F21C2990D006E35D9 /* DDPHomeBanner.m in Sources */,
 				8911387022E3665600ED15E3 /* DDPPlayerFileManagerPlayerListViewController.m in Sources */,
+				205D1337261DDFB100D42CE5 /* JQAnimationController.swift in Sources */,
 				89C3623E1FA8B2F40054A1F2 /* DDPFileCollectionTableViewCell.m in Sources */,
 				8955064021C2990D006E35D9 /* DDPHomeBangumiSubtitleGroup.m in Sources */,
 				89DA37521F5D127F003D7D59 /* NSDate+Tools.m in Sources */,
+				205D1344261DDFB100D42CE5 /* UIImageExtension.swift in Sources */,
 				890DE4861F690CC7002B45EB /* DDPLinkDownloadTask.m in Sources */,
 				8928E35D21B81B68007BA84C /* HomePageItemTableViewCell.m in Sources */,
 				898C1865216783AC00AE7484 /* DDPMineHeadView.m in Sources */,
