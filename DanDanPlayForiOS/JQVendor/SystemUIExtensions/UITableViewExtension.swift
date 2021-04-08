@@ -31,12 +31,4 @@ extension UITableView {
         self.reloadData()
     }
     
-    public func reloadTableViewWithAnimation(forRow rowNumberInAll: Int, in section: Int, withAnimation animation: UITableView.RowAnimation) {
-        var indexPaths: [IndexPath] = []
-        if (rowNumberInAll < 1) {fatalError("JQViewExtensions: There must be AT LEAST 1 row")}
-        for i in 0...(rowNumberInAll - 1) {indexPaths.append(IndexPath.init(row: i, section: section))}
-        self.reloadRows(at: indexPaths, with: animation)
-        self.reloadData()
-    }
-    
 }

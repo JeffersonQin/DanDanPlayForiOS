@@ -150,7 +150,7 @@ public extension String {
     
     // Note: If string == "", it will return false in case it breaks!!!
     func containsContinuouslyIgnoringUpperOrDownerCase(_ string: String) -> Bool {
-        return self.downerCase.containsCountinually(string.downerCase)
+        return self.lowercased().containsCountinually(string.lowercased())
     }
     
     // Note: If string == "", it will return false in case it breaks!!!
@@ -179,8 +179,54 @@ public extension String {
     }
     
     // Note: If string == "", it will return false in case it breaks!!!
-    func containsUnContinuouslyIgnoringUpperOrDownerCase(_ string: String) -> Bool {
-        return self.downerCase.containsUnCsontinuously(string.downerCase)
+    func containsUnContinuouslyIgnoringUpperOrDownerCase(_ str: String) -> Bool {
+        let selfLength = self.count
+        let strLength = str.count
+        let string = str.lowercased()
+        if string == "" {
+            return false
+        } else if selfLength < strLength {
+            return false
+        } else if selfLength == strLength && self.lowercased() == string {
+            return true
+        } else if selfLength == strLength && self.lowercased() != string {
+            return false
+        } else {
+            let selfChars = self.lowercased().charSet
+            var strChars = string.charSet
+            for c in selfChars {
+                if strChars.count != 0 {
+                    if strChars[0] == c {strChars.remove(at: 0)}
+                }
+            }
+            if strChars.count == 0  {return true}
+            else                    {return false}
+        }
+    }
+    
+    func containsUnContinuouslyIgnoringUpperOrLowerCasesAndSpaces(_ str: String) -> Bool {
+        let selfLength = self.count
+        let strLength = str.count
+        let string = str.lowercased()
+        if string == "" {
+            return false
+        } else if selfLength < strLength {
+            return false
+        } else if selfLength == strLength && self.lowercased() == string {
+            return true
+        } else if selfLength == strLength && self.lowercased() != string {
+            return false
+        } else {
+            let selfChars = self.lowercased().charSet
+            var strChars = string.charSet
+            for c in selfChars {
+                if strChars.count != 0 {
+                    if strChars[0] == c || strChars[0] == " " {strChars.remove(at: 0)}
+                }
+            }
+            if strChars.count == 0  {return true}
+            else                    {return false}
+        }
     }
     
 }

@@ -12,7 +12,8 @@
 @implementation JQDDPLinkFileRedirector
 
 + (void) redirectFrom:(UIViewController *) presentViewController push:(bool) flag {
-    JQDDPLinkFileTableViewController *jqvc = [[JQDDPLinkFileTableViewController alloc] init];
+//    JQDDPLinkFileTableViewController *jqvc = [[JQDDPLinkFileTableViewController alloc] init];
+    JQDDPLinkFileTableViewController *jqvc = [[UIStoryboard storyboardWithName:@"Update" bundle:nil] instantiateViewControllerWithIdentifier:@"JQDDPLinkFileTVC"];
     if (flag) {
         // 直接push一个新的vc
         [presentViewController.navigationController pushViewController:jqvc animated:YES];

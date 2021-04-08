@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="5Xj-WM-9b7">
+            <objects>
+                <navigationController id="suv-Uo-dtd" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zuF-hb-LTA">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="gDN-ga-cGk" kind="relationship" relationship="rootViewController" id="QVG-B3-iXd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AVE-Mn-j1v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-767" y="135"/>
+        </scene>
+        <!--PC资源库-->
+        <scene sceneID="hDY-0B-URL">
+            <objects>
+                <tableViewController storyboardIdentifier="JQDDPLinkFileTVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="gDN-ga-cGk" customClass="JQDDPLinkFileTableViewController" customModule="DDPlay" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="2lc-yS-4py">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="fileInfoCell" rowHeight="135" id="FcR-xC-1pg">
+                                <rect key="frame" x="0.0" y="28" width="414" height="135"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FcR-xC-1pg" id="tIc-eu-Ske">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="135"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" textAlignment="natural" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gF7-pe-ILY">
+                                            <rect key="frame" x="20" y="11" width="374" height="59"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="59" id="KlM-xJ-M0q"/>
+                                            </constraints>
+                                            <string key="text">File Name File Name File Name File Name File Name File Name File Name File Name File Name File Name File Name File Name File Name File Name File Name File Name File Name File Name File Name File Name File Name File Name File Name File Name File Name File Name File Name File Name File Name File Name File Name File Name File Name File Name File Name File Name File Name File Name File Name File Name File Name File Name File Name File Name </string>
+                                            <color key="textColor" systemColor="labelColor"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="2" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" text="识别: 摇曳露营 第二话" textAlignment="natural" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eJd-l4-RQJ">
+                                            <rect key="frame" x="20" y="70" width="374" height="27"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="27" id="A5T-b0-lQg"/>
+                                            </constraints>
+                                            <color key="textColor" systemColor="secondaryLabelColor"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="3" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" text="时长: xxx 大小: xxx" textAlignment="natural" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="otS-fv-cee">
+                                            <rect key="frame" x="20" y="97" width="374" height="24"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="24" id="TEg-qC-dbQ"/>
+                                            </constraints>
+                                            <color key="textColor" systemColor="secondaryLabelColor"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="otS-fv-cee" firstAttribute="leading" secondItem="tIc-eu-Ske" secondAttribute="leading" constant="20" symbolic="YES" id="9sG-s8-lus"/>
+                                        <constraint firstItem="eJd-l4-RQJ" firstAttribute="leading" secondItem="tIc-eu-Ske" secondAttribute="leadingMargin" id="KNH-h5-Epr"/>
+                                        <constraint firstItem="gF7-pe-ILY" firstAttribute="leading" secondItem="tIc-eu-Ske" secondAttribute="leadingMargin" id="R1L-Rw-dkn"/>
+                                        <constraint firstItem="eJd-l4-RQJ" firstAttribute="trailing" secondItem="tIc-eu-Ske" secondAttribute="trailingMargin" id="Rnf-PY-rfz"/>
+                                        <constraint firstItem="otS-fv-cee" firstAttribute="top" secondItem="eJd-l4-RQJ" secondAttribute="bottom" id="W9L-Z0-59J"/>
+                                        <constraint firstItem="gF7-pe-ILY" firstAttribute="top" secondItem="tIc-eu-Ske" secondAttribute="topMargin" id="aQd-DW-JLI"/>
+                                        <constraint firstItem="eJd-l4-RQJ" firstAttribute="top" secondItem="gF7-pe-ILY" secondAttribute="bottom" id="eKu-D6-cf5"/>
+                                        <constraint firstItem="gF7-pe-ILY" firstAttribute="trailing" secondItem="tIc-eu-Ske" secondAttribute="trailingMargin" id="qSX-4o-FTU"/>
+                                        <constraint firstAttribute="trailing" secondItem="otS-fv-cee" secondAttribute="trailing" constant="20" symbolic="YES" id="yXi-tX-2fs"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="gDN-ga-cGk" id="27n-T0-FNG"/>
+                            <outlet property="delegate" destination="gDN-ga-cGk" id="fgU-gA-sTZ"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="PC资源库" id="2qQ-HN-2wJ">
+                        <barButtonItem key="rightBarButtonItem" image="magnifyingglass" catalog="system" id="qiV-KK-qan">
+                            <connections>
+                                <segue destination="jc9-dn-xjG" kind="show" identifier="searchSegue" id="Da0-lI-Jcf"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sRP-J8-BPA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="73.913043478260875" y="134.59821428571428"/>
+        </scene>
+        <!--Search Table View Controller-->
+        <scene sceneID="9Mm-j8-VmK">
+            <objects>
+                <tableViewController id="jc9-dn-xjG" customClass="JQDDPSearchTableViewController" customModule="DDPlay" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="hzi-JM-MDT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="pLb-vJ-cpa">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="2x1-Bs-3GF">
+                                <rect key="frame" x="0.0" y="72" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2x1-Bs-3GF" id="iuv-Xu-8nL">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="jc9-dn-xjG" id="Spm-WK-xFN"/>
+                            <outlet property="delegate" destination="jc9-dn-xjG" id="nKj-21-31V"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="KxM-XB-IkH"/>
+                    <connections>
+                        <outlet property="searchBar" destination="pLb-vJ-cpa" id="NTG-Xc-DS4"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9By-sm-BWq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="923" y="135"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

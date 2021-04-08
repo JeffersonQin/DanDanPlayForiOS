@@ -23,6 +23,8 @@
 		205D1342261DDFB100D42CE5 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205D1334261DDFB100D42CE5 /* UITableViewExtension.swift */; };
 		205D1343261DDFB100D42CE5 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205D1335261DDFB100D42CE5 /* UIViewExtension.swift */; };
 		205D1344261DDFB100D42CE5 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205D1336261DDFB100D42CE5 /* UIImageExtension.swift */; };
+		205D1349261DE8C600D42CE5 /* Update.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 205D1348261DE8C600D42CE5 /* Update.storyboard */; };
+		205D1356261F3BC200D42CE5 /* JQDDPSearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205D1355261F3BC200D42CE5 /* JQDDPSearchTableViewController.swift */; };
 		20640C9D261D4DE6009088D9 /* JQDDPLinkFileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20640C9C261D4DE6009088D9 /* JQDDPLinkFileTableViewController.swift */; };
 		20640CAE261DB124009088D9 /* JQDDPLinkFileRedirector.m in Sources */ = {isa = PBXBuildFile; fileRef = 20640CAD261DB124009088D9 /* JQDDPLinkFileRedirector.m */; };
 		258DB85FF6A45F2A6FD3578E /* libPods-DDPlay_Target-iOS_Only-DDPlay_Review.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53E2B4DF7BAFF1EBB7784AEF /* libPods-DDPlay_Target-iOS_Only-DDPlay_Review.a */; };
@@ -932,6 +934,8 @@
 		205D1334261DDFB100D42CE5 /* UITableViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
 		205D1335261DDFB100D42CE5 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		205D1336261DDFB100D42CE5 /* UIImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		205D1348261DE8C600D42CE5 /* Update.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Update.storyboard; sourceTree = "<group>"; };
+		205D1355261F3BC200D42CE5 /* JQDDPSearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JQDDPSearchTableViewController.swift; sourceTree = "<group>"; };
 		20640C9C261D4DE6009088D9 /* JQDDPLinkFileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JQDDPLinkFileTableViewController.swift; sourceTree = "<group>"; };
 		20640CA8261D8468009088D9 /* DDPlay-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DDPlay-Bridging-Header.h"; sourceTree = "<group>"; };
 		20640CAD261DB124009088D9 /* JQDDPLinkFileRedirector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JQDDPLinkFileRedirector.m; sourceTree = "<group>"; };
@@ -1714,9 +1718,18 @@
 			path = SystemUIExtensions;
 			sourceTree = "<group>";
 		};
+		205D1347261DE8AA00D42CE5 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				205D1348261DE8C600D42CE5 /* Update.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
 		20640C9A261D4CE6009088D9 /* JQUpdate */ = {
 			isa = PBXGroup;
 			children = (
+				205D1347261DE8AA00D42CE5 /* Storyboard */,
 				20640CAC261DB072009088D9 /* Tools */,
 				20640CAB261DB063009088D9 /* ViewController */,
 				20640CA8261D8468009088D9 /* DDPlay-Bridging-Header.h */,
@@ -1727,6 +1740,7 @@
 		20640CAB261DB063009088D9 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				205D1355261F3BC200D42CE5 /* JQDDPSearchTableViewController.swift */,
 				20640C9C261D4DE6009088D9 /* JQDDPLinkFileTableViewController.swift */,
 			);
 			path = ViewController;
@@ -3170,6 +3184,7 @@
 				8928E35E21B81B68007BA84C /* HomePageBangumiProgressCollectionViewCell.xib in Resources */,
 				893BCC0B2053D5E6007E378F /* DDPBiliBiliSearchVideoTableViewCell.xib in Resources */,
 				89E257741FB8936C00AC075A /* qr_help2@2x.png in Resources */,
+				205D1349261DE8C600D42CE5 /* Update.storyboard in Resources */,
 				8911386622E3665600ED15E3 /* DDPPlayerShieldDanmakuCollectionViewCell.xib in Resources */,
 				8928E35321B81B68007BA84C /* DDPFeaturedTableViewCell.xib in Resources */,
 				89A80336208B35EA00FF6C2B /* RefreshText.plist in Resources */,
@@ -4139,6 +4154,7 @@
 				89681B3F1F090EDA00103CFF /* DDPSMBInfo.m in Sources */,
 				89A42E9D1EA5B12700FA0DF3 /* DDPFilter.m in Sources */,
 				8955063B21C2990D006E35D9 /* DDPNewBangumiIntroCollection.m in Sources */,
+				205D1356261F3BC200D42CE5 /* JQDDPSearchTableViewController.swift in Sources */,
 				89AE37BD1F626AE2008D06CF /* DDPAttentionListTableViewCell.m in Sources */,
 				89B8F90322636E8600E2CF80 /* CALayer+Animation.m in Sources */,
 				8916C7C51EA8AAB500A2233D /* DDPSearchViewController.m in Sources */,
