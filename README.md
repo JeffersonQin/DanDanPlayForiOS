@@ -55,8 +55,8 @@
 ![预览图2](http://wx1.sinaimg.cn/mw690/005tgoOjgy1ff125pbx12j30hs0vk4b5.jpg)
 
 ## 联系
-原作者: [O浪微博](http://weibo.com/u/2996607392)
-我: 1247006353@qq.com
+- 原作者: [O浪微博](http://weibo.com/u/2996607392)
+- 我: 1247006353@qq.com
 
 ## 许可证
 软件遵循MIT协议 详情请见LICENSE文件
