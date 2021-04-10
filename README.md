@@ -1,6 +1,21 @@
 # 弹弹play for iOS
 
-[弹弹play](http://www.dandanplay.com/)的iOS版 
+[弹弹play](http://www.dandanplay.com/)的iOS版。下面是Fork逻辑:
+
+```
+@sunsx9316 sunsx9316 / DanDanPlayForiOS
+ @wolfcon wolfcon / DanDanPlayForiOS
+  @JeffersonQin JeffersonQin / DanDanPlayForiOS
+```
+
+由于原项目已经不再维护, 根据GitHub相关规范, 本项目从原项目中Detach, 作为独立项目继续开发。
+
+## 新版功能介绍
+
+- [bug fix] 修复了无法远程BT下载encodeURI两次导致无法下载
+- [feature] 增加了新的远程PC文件查看界面
+    - 支持文件索引
+    - 以文件名展示
 
 ## 功能介绍
 1. 视频智能识别
@@ -39,8 +54,9 @@
 
 ![预览图2](http://wx1.sinaimg.cn/mw690/005tgoOjgy1ff125pbx12j30hs0vk4b5.jpg)
 
-## 联系我
-[O浪微博](http://weibo.com/u/2996607392)
+## 联系
+原作者: [O浪微博](http://weibo.com/u/2996607392)
+我: 1247006353@qq.com
 
 ## 许可证
 软件遵循MIT协议 详情请见LICENSE文件
