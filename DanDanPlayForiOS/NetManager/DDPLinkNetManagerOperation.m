@@ -295,6 +295,31 @@ JHControlVideoMethod JHControlVideoMethodPrevious = @"previous";
     }];
 }
 
++ (NSURLSessionDataTask *)linkGetVideoSubtitleInfo:(NSString *)ipAddress
+                                       videoID:(NSString *)videoID
+                             completionHandler:(DDP_COLLECTION_RESPONSE_ACTION(DDPSubtitleCollection))completionHandler {
+    if (ipAddress.length == 0) {
+        if (completionHandler) {
+            completionHandler(nil, DDPErrorWithCode(DDPErrorCodeParameterNoCompletion));
+        }
+        return nil;
+    }
+    
+    NSString *path = [NSString stringWithFormat:@"%@/%@/subtitle/info/%@", ipAddress, LINK_API_INDEX, videoID];
+    
+    return [[DDPLinkNetManagerOperation sharedNetManager] GETWithPath:path
+                                                       serializerType:DDPBaseNetManagerSerializerTypeJSON
+                                                           parameters:self.additionParameters
+                                                    completionHandler:^(DDPResponse *responseObj) {
+        DDPSubtitleCollection *collection = [[DDPSubtitleCollection alloc] init];
+        NSString *jsonSubtitle = [[responseObj.responseObject objectForKey:@"subtitles"] jsonStringEncoded];
+        collection = [NSArray yy_modelArrayWithClass:[DDPSubtitle class] json:jsonSubtitle].mutableCopy;
+        if (completionHandler) {
+            completionHandler(collection, responseObj.error);
+        }
+    }];
+}
+
 + (NSDictionary *)additionParameters {
     let dic = [NSMutableDictionary dictionary];
     let password = [DDPCacheManager shareCacheManager].linkInfo.apiToken;

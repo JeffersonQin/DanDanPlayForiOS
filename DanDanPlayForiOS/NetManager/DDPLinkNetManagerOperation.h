@@ -11,6 +11,7 @@
 #import "DDPLinkInfo.h"
 #import "DDPLinkDownloadTaskCollection.h"
 #import "DDPLibraryCollection.h"
+#import "DDPSubtitleCollection.h"
 
 //控制下载文件状态
 typedef NSString * JHControlLinkTaskMethod NS_STRING_ENUM;
@@ -128,11 +129,22 @@ FOUNDATION_EXPORT JHControlVideoMethod JHControlVideoMethodPrevious;
 /**
  媒体库
 
- @param ipAdress id
+ @param ipAdress ip
  @param completionHandler 回调
  @return 任务
  */
 + (NSURLSessionDataTask *)linkLibraryWithIpAdress:(NSString *)ipAdress
                                      completionHandler:(DDP_COLLECTION_RESPONSE_ACTION(DDPLibraryCollection))completionHandler;
+
+/**
+ 获取字幕列表
+ 
+ @param ipAddress ip
+ @param videoID 视频ID
+ @param completionHandler 回调
+ */
++ (NSURLSessionDataTask *)linkGetVideoSubtitleInfo:(NSString *)ipAddress
+                                           videoID:(NSString *)videoID
+                                 completionHandler:(DDP_COLLECTION_RESPONSE_ACTION(DDPSubtitleCollection))completionHandler;
 
 @end

@@ -27,6 +27,9 @@ class JQDDPSearchTableViewController: UITableViewController, UISearchBarDelegate
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+//        DDPLinkNetManagerOperation.linkGetVideoSubtitleInfo(JQDDPLinkTransmitter.getLinkInfo()?.selectedIpAdress, videoID: "f19b5806-39ea-41f6-ad5e-f20a2e2a9f18") { (res, error) in
+//            print(res)
+//        }
     }
 
     // MARK: - Table view data source

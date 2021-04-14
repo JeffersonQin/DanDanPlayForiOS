@@ -27,6 +27,8 @@
 		205D1356261F3BC200D42CE5 /* JQDDPSearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205D1355261F3BC200D42CE5 /* JQDDPSearchTableViewController.swift */; };
 		20640C9D261D4DE6009088D9 /* JQDDPLinkFileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20640C9C261D4DE6009088D9 /* JQDDPLinkFileTableViewController.swift */; };
 		20640CAE261DB124009088D9 /* JQDDPLinkFileRedirector.m in Sources */ = {isa = PBXBuildFile; fileRef = 20640CAD261DB124009088D9 /* JQDDPLinkFileRedirector.m */; };
+		207AA0A0262729380003E14D /* DDPSubtitle.m in Sources */ = {isa = PBXBuildFile; fileRef = 207AA09F262729380003E14D /* DDPSubtitle.m */; };
+		207AA0A4262734E70003E14D /* DDPSubtitleCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 207AA0A3262734E70003E14D /* DDPSubtitleCollection.m */; };
 		258DB85FF6A45F2A6FD3578E /* libPods-DDPlay_Target-iOS_Only-DDPlay_Review.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53E2B4DF7BAFF1EBB7784AEF /* libPods-DDPlay_Target-iOS_Only-DDPlay_Review.a */; };
 		2A4350E1B6A1BF35E91545BA /* libPods-DDPlay_Target-iOS_Only-DDPlay.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 361F511D4F4E8CE3A646D000 /* libPods-DDPlay_Target-iOS_Only-DDPlay.a */; };
 		3EA04C948B05C030A98E33C6 /* libPods-DDPlay_Target-DDPlay_ToMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C8983450A097DFD30A2DBAB6 /* libPods-DDPlay_Target-DDPlay_ToMac.a */; };
@@ -940,6 +942,10 @@
 		20640CA8261D8468009088D9 /* DDPlay-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DDPlay-Bridging-Header.h"; sourceTree = "<group>"; };
 		20640CAD261DB124009088D9 /* JQDDPLinkFileRedirector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JQDDPLinkFileRedirector.m; sourceTree = "<group>"; };
 		20640CB1261DB1B9009088D9 /* JQDDPLinkFileRedirector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JQDDPLinkFileRedirector.h; sourceTree = "<group>"; };
+		207AA09F262729380003E14D /* DDPSubtitle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDPSubtitle.m; sourceTree = "<group>"; };
+		207AA0A2262729920003E14D /* DDPSubtitle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDPSubtitle.h; sourceTree = "<group>"; };
+		207AA0A3262734E70003E14D /* DDPSubtitleCollection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDPSubtitleCollection.m; sourceTree = "<group>"; };
+		207AA0A6262734F80003E14D /* DDPSubtitleCollection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDPSubtitleCollection.h; sourceTree = "<group>"; };
 		2200A8C5E60D84DF1B07F2C2 /* Pods-DDPlay_Target-iOS_Only-DDPlay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDPlay_Target-iOS_Only-DDPlay.debug.xcconfig"; path = "Target Support Files/Pods-DDPlay_Target-iOS_Only-DDPlay/Pods-DDPlay_Target-iOS_Only-DDPlay.debug.xcconfig"; sourceTree = "<group>"; };
 		2344548B202E51930721C208 /* Pods-DDPlay_Target-iOS_Only-DDPlay_2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDPlay_Target-iOS_Only-DDPlay_2.release.xcconfig"; path = "Target Support Files/Pods-DDPlay_Target-iOS_Only-DDPlay_2/Pods-DDPlay_Target-iOS_Only-DDPlay_2.release.xcconfig"; sourceTree = "<group>"; };
 		361F511D4F4E8CE3A646D000 /* libPods-DDPlay_Target-iOS_Only-DDPlay.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DDPlay_Target-iOS_Only-DDPlay.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1729,6 +1735,7 @@
 		20640C9A261D4CE6009088D9 /* JQUpdate */ = {
 			isa = PBXGroup;
 			children = (
+				207AA0972627270B0003E14D /* Model */,
 				205D1347261DE8AA00D42CE5 /* Storyboard */,
 				20640CAC261DB072009088D9 /* Tools */,
 				20640CAB261DB063009088D9 /* ViewController */,
@@ -1755,6 +1762,17 @@
 				205D12BA261DD28000D42CE5 /* JQDDPLinkTransmitter.h */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		207AA0972627270B0003E14D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				207AA09F262729380003E14D /* DDPSubtitle.m */,
+				207AA0A2262729920003E14D /* DDPSubtitle.h */,
+				207AA0A3262734E70003E14D /* DDPSubtitleCollection.m */,
+				207AA0A6262734F80003E14D /* DDPSubtitleCollection.h */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		890446811FE558D8006872A0 /* Serializer */ = {
@@ -3081,7 +3099,7 @@
 			attributes = {
 				CLASSPREFIX = DDP;
 				LastUpgradeCheck = 1000;
-				ORGANIZATIONNAME = JimHuang;
+				ORGANIZATIONNAME = JeffersonQin;
 				TargetAttributes = {
 					8907512621A1171A00D149F3 = {
 						DevelopmentTeam = Q35T78D2D5;
@@ -4032,7 +4050,9 @@
 				8960971122676D1E00673C28 /* Masonry+DDPTools.m in Sources */,
 				89F6B911201DC5210080B5ED /* DDPSMBInfo+WCDB.mm in Sources */,
 				89A42EBA1EA5ECC800FA0DF3 /* DDPRelated.m in Sources */,
+				207AA0A4262734E70003E14D /* DDPSubtitleCollection.m in Sources */,
 				89A1C0191EAF7F4000DB9BE9 /* DDPSelectedTableViewCell.m in Sources */,
+				207AA0A0262729380003E14D /* DDPSubtitle.m in Sources */,
 				8911388C22E3665600ED15E3 /* DDPPlayerSubTitleIndexViewMediator.m in Sources */,
 				8911388E22E3665600ED15E3 /* DDPPlayerSendDanmakuViewController.m in Sources */,
 				89E834291F1E5A5400E781EB /* DDPSMBVideoModel.m in Sources */,
