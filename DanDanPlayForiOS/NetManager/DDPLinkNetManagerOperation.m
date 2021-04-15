@@ -313,7 +313,7 @@ JHControlVideoMethod JHControlVideoMethodPrevious = @"previous";
                                                     completionHandler:^(DDPResponse *responseObj) {
         DDPSubtitleCollection *collection = [[DDPSubtitleCollection alloc] init];
         NSString *jsonSubtitle = [[responseObj.responseObject objectForKey:@"subtitles"] jsonStringEncoded];
-        collection = [NSArray yy_modelArrayWithClass:[DDPSubtitle class] json:jsonSubtitle].mutableCopy;
+        collection.collection = [NSArray yy_modelArrayWithClass:[DDPSubtitle class] json:jsonSubtitle].mutableCopy;
         if (completionHandler) {
             completionHandler(collection, responseObj.error);
         }

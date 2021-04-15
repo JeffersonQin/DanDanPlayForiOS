@@ -46,6 +46,10 @@ CG_INLINE NSURL *ddp_linkVideoURL(NSString *ip, NSString *hash) {
     return [NSURL URLWithString:[NSString stringWithFormat:@"%@/%@/stream/id/%@", ip, LINK_API_INDEX, hash]];
 }
 
+CG_INLINE NSURL *ddp_linkSubtitleURL(NSString *ip, NSString *Id, NSString *fileName) {
+    return [NSURL URLWithString:[NSString stringWithFormat:@"%@/%@/subtitle/file/%@?fileName=%@", ip, LINK_API_INDEX, Id, fileName]];
+}
+
 CG_INLINE NSString *ddp_taskDownloadPath() {
     return [UIApplication sharedApplication].documentsPath;
 }

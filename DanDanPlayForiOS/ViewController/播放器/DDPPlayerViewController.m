@@ -36,6 +36,7 @@
 #import "DDPDanmakuProducer.h"
 #import "DDPWebDAVVideoModel.h"
 #import "DDPWebDAVFilePickerViewController.h"
+#import "DDPlay-Swift.h"
 
 //在主线程分析弹幕的时间
 #define PARSE_TIME 10
@@ -922,8 +923,18 @@
         } while (tempFile != nil);
         [vcArr insertObject:self atIndex:0];
         [self.navigationController setViewControllers:vcArr animated:YES];
-    }
-    else {
+    } else if ([file isKindOfClass:[DDPLinkFile class]]) {
+        NSLog(@"Link File Choose Subtitle here.");
+        DDPLinkFile *linkFile = (DDPLinkFile *) file;
+        NSLog(@"playid: %@", linkFile.library.playId);
+        JQDDPLinkSubtitleManagerPickerViewController *vc = [[JQDDPLinkSubtitleManagerPickerViewController alloc] init];
+        vc.videoID = linkFile.library.playId;
+        vc.selectedFileAction = selectedFileCallBack;
+        NSMutableArray *vcArr = [NSMutableArray array];
+        [vcArr insertObject:vc atIndex:0];
+        [vcArr insertObject:self atIndex:0];
+        [self.navigationController setViewControllers:vcArr animated:YES];
+    } else {
         __block DDPFile *tempFile = nil;
         DDPSMBFile *parentFile = file.parentFile;
         

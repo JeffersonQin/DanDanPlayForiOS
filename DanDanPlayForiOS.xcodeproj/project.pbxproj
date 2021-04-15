@@ -29,6 +29,7 @@
 		20640CAE261DB124009088D9 /* JQDDPLinkFileRedirector.m in Sources */ = {isa = PBXBuildFile; fileRef = 20640CAD261DB124009088D9 /* JQDDPLinkFileRedirector.m */; };
 		207AA0A0262729380003E14D /* DDPSubtitle.m in Sources */ = {isa = PBXBuildFile; fileRef = 207AA09F262729380003E14D /* DDPSubtitle.m */; };
 		207AA0A4262734E70003E14D /* DDPSubtitleCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 207AA0A3262734E70003E14D /* DDPSubtitleCollection.m */; };
+		207AA0A9262876280003E14D /* JQDDPLinkSubtitleManagerPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207AA0A8262876280003E14D /* JQDDPLinkSubtitleManagerPickerViewController.swift */; };
 		258DB85FF6A45F2A6FD3578E /* libPods-DDPlay_Target-iOS_Only-DDPlay_Review.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53E2B4DF7BAFF1EBB7784AEF /* libPods-DDPlay_Target-iOS_Only-DDPlay_Review.a */; };
 		2A4350E1B6A1BF35E91545BA /* libPods-DDPlay_Target-iOS_Only-DDPlay.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 361F511D4F4E8CE3A646D000 /* libPods-DDPlay_Target-iOS_Only-DDPlay.a */; };
 		3EA04C948B05C030A98E33C6 /* libPods-DDPlay_Target-DDPlay_ToMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C8983450A097DFD30A2DBAB6 /* libPods-DDPlay_Target-DDPlay_ToMac.a */; };
@@ -946,6 +947,7 @@
 		207AA0A2262729920003E14D /* DDPSubtitle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDPSubtitle.h; sourceTree = "<group>"; };
 		207AA0A3262734E70003E14D /* DDPSubtitleCollection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDPSubtitleCollection.m; sourceTree = "<group>"; };
 		207AA0A6262734F80003E14D /* DDPSubtitleCollection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDPSubtitleCollection.h; sourceTree = "<group>"; };
+		207AA0A8262876280003E14D /* JQDDPLinkSubtitleManagerPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JQDDPLinkSubtitleManagerPickerViewController.swift; sourceTree = "<group>"; };
 		2200A8C5E60D84DF1B07F2C2 /* Pods-DDPlay_Target-iOS_Only-DDPlay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDPlay_Target-iOS_Only-DDPlay.debug.xcconfig"; path = "Target Support Files/Pods-DDPlay_Target-iOS_Only-DDPlay/Pods-DDPlay_Target-iOS_Only-DDPlay.debug.xcconfig"; sourceTree = "<group>"; };
 		2344548B202E51930721C208 /* Pods-DDPlay_Target-iOS_Only-DDPlay_2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDPlay_Target-iOS_Only-DDPlay_2.release.xcconfig"; path = "Target Support Files/Pods-DDPlay_Target-iOS_Only-DDPlay_2/Pods-DDPlay_Target-iOS_Only-DDPlay_2.release.xcconfig"; sourceTree = "<group>"; };
 		361F511D4F4E8CE3A646D000 /* libPods-DDPlay_Target-iOS_Only-DDPlay.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DDPlay_Target-iOS_Only-DDPlay.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1749,6 +1751,7 @@
 			children = (
 				205D1355261F3BC200D42CE5 /* JQDDPSearchTableViewController.swift */,
 				20640C9C261D4DE6009088D9 /* JQDDPLinkFileTableViewController.swift */,
+				207AA0A8262876280003E14D /* JQDDPLinkSubtitleManagerPickerViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -3922,6 +3925,7 @@
 				89929FFB1FBC6903009FDB06 /* DDPHttpReceiveTableViewCell.m in Sources */,
 				898C187E2168F06000AE7484 /* DDPSearchAnimeDetailsCollection.m in Sources */,
 				89A42EA81EA5BB9D00FA0DF3 /* DDPCommentNetManagerOperation.m in Sources */,
+				207AA0A9262876280003E14D /* JQDDPLinkSubtitleManagerPickerViewController.swift in Sources */,
 				205D133A261DDFB100D42CE5 /* JQOldSideView_ControllerSet.swift in Sources */,
 				89EC0E5C1F2D812A004D3C12 /* DDPHelpViewController.m in Sources */,
 				8946D52B1EB6D38800161833 /* DDPFileManagerBaseViewCell.m in Sources */,
