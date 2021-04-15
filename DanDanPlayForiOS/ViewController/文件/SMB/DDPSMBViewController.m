@@ -34,7 +34,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationItem.title = @"局域网设备";
+    self.navigationItem.title = @"SMBv1";
     [self configRightItem];
     
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -123,7 +123,7 @@
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
     if (section == 0) {
         DDPSMBLoginHeaderView *view = [tableView dequeueReusableHeaderFooterViewWithIdentifier:@"DDPSMBLoginHeaderView"];
-        view.titleLabel.text = @"本地局域网设备";
+        view.titleLabel.text = @"本地局域网设备 (SMBv1)";
         return view;
     }
     

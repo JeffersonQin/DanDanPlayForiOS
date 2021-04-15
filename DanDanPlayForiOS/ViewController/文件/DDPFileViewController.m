@@ -161,7 +161,7 @@
             vc.file = ddp_getANewRootFile();
             [self.navigationController pushViewController:vc animated:YES];
         }
-        else if ([item.name isEqualToString:@"局域网设备"]) {
+        else if ([item.name isEqualToString:@"SMBv1"]) {
 #if !DDPAPPTYPEISMAC
             DDPSMBViewController *vc = [[DDPSMBViewController alloc] init];
             vc.hidesBottomBarWhenPushed = YES;
@@ -296,7 +296,7 @@
             if (ddp_appType == DDPAppTypeDefault) {
                 [node.subItems addObject:({
                     DDPFileTreeNode *node = [[DDPFileTreeNode alloc] init];
-                    node.name = @"局域网设备";
+                    node.name = @"SMBv1";
                     node.type = DDPFileTreeNodeTypeLocation;
                     node.img = [[UIImage imageNamed:@"file_net_equipment"] yy_imageByTintColor:[UIColor darkGrayColor]];
                     node;
