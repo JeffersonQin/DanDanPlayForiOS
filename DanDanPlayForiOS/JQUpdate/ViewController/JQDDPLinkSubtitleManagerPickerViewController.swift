@@ -70,7 +70,7 @@ class JQDDPLinkSubtitleManagerPickerViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.tableView.deselectRow(at: indexPath, animated: true)
-        self.selectedFileAction!(DDPFile.init(fileURL: ddp_linkSubtitleURL(JQDDPLinkTransmitter.getLinkInfo()?.selectedIpAdress, self.videoID, self.dataSource[indexPath.row].fileName.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)), type: .document))
+        self.selectedFileAction!(DDPFile.init(fileURL: JQDDPLinkURLWithToken.ddp_linkSubtitleURL_(withToken: JQDDPLinkTransmitter.getLinkInfo()?.selectedIpAdress, id: self.videoID, fileName: self.dataSource[indexPath.row].fileName.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)), type: .document))
         self.navigationController?.popToRootViewController(animated: true)
     }
     

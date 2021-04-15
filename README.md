@@ -13,15 +13,15 @@
 ## 新版功能介绍
 
 - [bug fix] 修复了无法远程BT下载encodeURI两次导致无法下载
+- [bug fix] 修复DDPMethods中部分网络请求未使用token
+- [warning] 原“局域网设备”功能更改为“SMBv1”
+- [feature] 增加了远程PC的字幕选择功能
 - [feature] 增加了新的远程PC文件查看界面
     - 支持文件索引
     - 以文件名展示
-    - 增加了远程PC的字幕选择功能
-- [warning] 原“局域网设备”功能更改为“SMBv1”
 
 ## TODO
 - 远程PC文件查看界面v2的上拉刷新
-- 修复DDPMethods中部分网络请求未使用token
 - 实现SMBv2/SMBv3
 
 ## 功能介绍

@@ -33,6 +33,7 @@
 #import "DDPMethod.h"
 
 #import "JQDDPLinkTransmitter.h"
+#import "JQDDPLinkURLWithToken.h"
 
 #import "MBProgressHUD/MBProgressHUD.h"
 

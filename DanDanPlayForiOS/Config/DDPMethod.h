@@ -34,20 +34,20 @@ CG_INLINE NSString *ddp_danmakuDownloadPath() {
     return path;
 }
 
-CG_INLINE NSURL *ddp_linkImageURL(NSString *ip, NSString *hash) {
+CG_INLINE NSString *ddp_linkImageURL(NSString *ip, NSString *hash) {
     if (hash.length == 0) return nil;
     
-    return [NSURL URLWithString:[NSString stringWithFormat:@"%@/%@/image/%@", ip, LINK_API_INDEX, hash]];
+    return [NSString stringWithFormat:@"%@/%@/image/%@", ip, LINK_API_INDEX, hash];
 }
 
-CG_INLINE NSURL *ddp_linkVideoURL(NSString *ip, NSString *hash) {
+CG_INLINE NSString *ddp_linkVideoURL(NSString *ip, NSString *hash) {
     if (hash.length == 0) return nil;
     
-    return [NSURL URLWithString:[NSString stringWithFormat:@"%@/%@/stream/id/%@", ip, LINK_API_INDEX, hash]];
+    return [NSString stringWithFormat:@"%@/%@/stream/id/%@", ip, LINK_API_INDEX, hash];
 }
 
-CG_INLINE NSURL *ddp_linkSubtitleURL(NSString *ip, NSString *Id, NSString *fileName) {
-    return [NSURL URLWithString:[NSString stringWithFormat:@"%@/%@/subtitle/file/%@?fileName=%@", ip, LINK_API_INDEX, Id, fileName]];
+CG_INLINE NSString *ddp_linkSubtitleURL(NSString *ip, NSString *Id, NSString *fileName) {
+    return [NSString stringWithFormat:@"%@/%@/subtitle/file/%@?fileName=%@", ip, LINK_API_INDEX, Id, fileName];
 }
 
 CG_INLINE NSString *ddp_taskDownloadPath() {

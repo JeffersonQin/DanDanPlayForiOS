@@ -9,6 +9,7 @@
 #import "DDPLinkFileTableViewCell.h"
 #import "DDPMediaPlayer.h"
 #import "DDPVideoModel+Tools.h"
+#import "JQDDPLinkURLWithToken.h"
 
 @implementation DDPLinkFileTableViewCell
 {
@@ -21,7 +22,7 @@
     DDPLibrary *library = _model.library;
     
     self.nameLabel.text = [NSString stringWithFormat:@"%@ %@", library.animeTitle.length ? library.animeTitle : @"", library.episodeTitle.length ? library.episodeTitle : @""];
-    let imgURL = ddp_linkImageURL([DDPCacheManager shareCacheManager].linkInfo.selectedIpAdress, library.playId);
+    let imgURL = [JQDDPLinkURLWithToken ddp_linkImageURL_withToken:[DDPCacheManager shareCacheManager].linkInfo.selectedIpAdress hash:library.playId];
     [self.bgImgView ddp_setImageWithURL:imgURL];
 //    DDPVideoCache *cache = [[DDPCacheManager shareCacheManager] episodeLinkCacheWithVideoModel:_model.videoModel];
     NSInteger time = _model.videoModel.lastPlayTime;

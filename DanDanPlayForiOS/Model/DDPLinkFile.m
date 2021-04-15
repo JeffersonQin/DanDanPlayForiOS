@@ -7,6 +7,7 @@
 //
 
 #import "DDPLinkFile.h"
+#import "JQDDPLinkURLWithToken.h"
 
 #if !DDPAPPTYPEISMAC
 #import "DDPLinkVideoModel.h"
@@ -35,7 +36,7 @@
         return [NSURL URLWithString:[_library.path stringByURLEncode]];
     }
     
-    return ddp_linkVideoURL([DDPCacheManager shareCacheManager].linkInfo.selectedIpAdress, _library.playId);
+    return [JQDDPLinkURLWithToken ddp_linkVideoURL_withToken:[DDPCacheManager shareCacheManager].linkInfo.selectedIpAdress hash:_library.playId];
 }
 
 - (DDPVideoModel *)videoModel {
