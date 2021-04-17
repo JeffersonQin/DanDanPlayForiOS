@@ -3,7 +3,7 @@
 //  DDPlay
 //
 //  Created by JeffersonQin on 2021/4/7.
-//  Copyright © 2021 JimHuang. All rights reserved.
+//  Copyright © 2021 JeffersonQin. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
