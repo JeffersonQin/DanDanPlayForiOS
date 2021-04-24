@@ -207,6 +207,12 @@ typedef NS_ENUM(NSUInteger, InterfaceViewPanType) {
         UIPanGestureRecognizer *panGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panScreen:)];
         panGesture.delegate = self;
         [self.gestureView addGestureRecognizer:panGesture];
+        
+        UITapGestureRecognizer *hideDanmakuGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(doubleTapScreenWithTwoFingers:)];
+        hideDanmakuGesture.numberOfTouchesRequired = 2;
+        hideDanmakuGesture.numberOfTapsRequired = 2;
+        hideDanmakuGesture.delegate = self;
+        [self.gestureView addGestureRecognizer:hideDanmakuGesture];
     }
     
     //监听音量变化
@@ -765,6 +771,17 @@ typedef NS_ENUM(NSUInteger, InterfaceViewPanType) {
     }
     else {
         [self showWithAnimate:YES];
+    }
+}
+
+- (void)doubleTapScreenWithTwoFingers:(UITapGestureRecognizer *)sender {
+    if ([self.delegate respondsToSelector:@selector(interfaceView:touchDanmakuVisiableButton:)]) {
+        [self.delegate interfaceView:self touchDanmakuVisiableButton:!self.danmakuHideSwitch.isOn];
+        if (self.danmakuHideSwitch.isOn) {
+            self.danmakuHideSwitch.on = NO;
+        } else {
+            self.danmakuHideSwitch.on = YES;
+        }
     }
 }
 
