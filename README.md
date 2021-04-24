@@ -16,6 +16,7 @@
 - [bug fix] 修复DDPMethods中部分网络请求未使用token
 - [warning] 原“局域网设备”功能更改为“SMBv1”
 - [feature] 增加了远程PC的字幕选择功能
+- [feature] 增加了播放器双指双击屏幕显示/隐藏弹幕功能
 - [feature] 增加了新的远程PC文件查看界面
     - 支持文件索引
     - 以文件名展示
