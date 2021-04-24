@@ -488,6 +488,159 @@
             return item;
         }()];
         
+        //远程PC设置
+        DDPSetting *linkSetting = [[DDPSetting alloc] init];
+        [arr addObject:linkSetting];
+        linkSetting.title = @"远程PC设置";
+        
+        [linkSetting.items addObject:^{
+            DDPSettingItem *item = [[DDPSettingItem alloc] initWithReuseClass:[DDPOtherSettingTitleSubtitleTableViewCell class]];
+            item.dequeueReuseCellCallBack = ^(DDPOtherSettingTitleSubtitleTableViewCell *cell) {
+                cell.titleLabel.text = @"局域网地址";
+                NSString *domain = [DDPCacheManager shareCacheManager].userDefineLANAddress;
+                cell.detailLabel.text = domain.length > 0 ? domain : @"(空)";
+            };
+            
+            item.didSelectedCellCallBack = ^(NSIndexPath *indexPath) {
+                @strongify(self)
+                if (!self) return;
+                
+                UIAlertController *vc = [UIAlertController alertControllerWithTitle:@"输入局域网地址" message:@"留空即不设置" preferredStyle:UIAlertControllerStyleAlert];
+                @weakify(vc)
+                [vc addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                    @strongify(vc)
+                    if (!vc) return;
+                    
+                    NSString *domain = vc.textFields.firstObject.text;
+                    [DDPCacheManager shareCacheManager].userDefineLANAddress = domain;
+                    [self.tableView reloadData];
+                }]];
+                
+                [vc addAction:[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil]];
+                
+                [vc addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
+                    textField.text = [DDPCacheManager shareCacheManager].userDefineLANAddress;
+                    textField.font = [UIFont ddp_normalSizeFont];
+                    textField.placeholder = @"例如: 192.168.1.2";
+                }];
+                
+                [self presentViewController:vc animated:true completion:nil];
+            };
+            
+            return item;
+        }()];
+        
+        [linkSetting.items addObject:^{
+            DDPSettingItem *item = [[DDPSettingItem alloc] initWithReuseClass:[DDPOtherSettingTitleSubtitleTableViewCell class]];
+            item.dequeueReuseCellCallBack = ^(DDPOtherSettingTitleSubtitleTableViewCell *cell) {
+                cell.titleLabel.text = @"广域网地址";
+                NSString *domain = [DDPCacheManager shareCacheManager].userDefineWANAddress;
+                cell.detailLabel.text = domain.length > 0 ? domain : @"(空)";
+            };
+            
+            item.didSelectedCellCallBack = ^(NSIndexPath *indexPath) {
+                @strongify(self)
+                if (!self) return;
+                
+                UIAlertController *vc = [UIAlertController alertControllerWithTitle:@"输入广域网地址" message:@"留空即不设置" preferredStyle:UIAlertControllerStyleAlert];
+                @weakify(vc)
+                [vc addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                    @strongify(vc)
+                    if (!vc) return;
+                    
+                    NSString *domain = vc.textFields.firstObject.text;
+                    [DDPCacheManager shareCacheManager].userDefineWANAddress = domain;
+                    [self.tableView reloadData];
+                }]];
+                
+                [vc addAction:[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil]];
+                
+                [vc addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
+                    textField.text = [DDPCacheManager shareCacheManager].userDefineWANAddress;
+                    textField.font = [UIFont ddp_normalSizeFont];
+                    textField.placeholder = @"例如: 220.181.38.148";
+                }];
+                
+                [self presentViewController:vc animated:true completion:nil];
+            };
+            
+            return item;
+        }()];
+        
+        [linkSetting.items addObject:^{
+            DDPSettingItem *item = [[DDPSettingItem alloc] initWithReuseClass:[DDPOtherSettingTitleSubtitleTableViewCell class]];
+            item.dequeueReuseCellCallBack = ^(DDPOtherSettingTitleSubtitleTableViewCell *cell) {
+                cell.titleLabel.text = @"媒体库端口";
+                NSString *port = [DDPCacheManager shareCacheManager].userDefineLinkPCPort;
+                cell.detailLabel.text = port.length > 0 ? port : @"80";
+            };
+            
+            item.didSelectedCellCallBack = ^(NSIndexPath *indexPath) {
+                @strongify(self)
+                if (!self) return;
+                
+                UIAlertController *vc = [UIAlertController alertControllerWithTitle:@"输入媒体库端口" message:@"留空则默认为80" preferredStyle:UIAlertControllerStyleAlert];
+                @weakify(vc)
+                [vc addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                    @strongify(vc)
+                    if (!vc) return;
+                    
+                    NSString *port = vc.textFields.firstObject.text;
+                    [DDPCacheManager shareCacheManager].userDefineLinkPCPort = port;
+                    [self.tableView reloadData];
+                }]];
+                
+                [vc addAction:[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil]];
+                
+                [vc addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
+                    textField.text = [DDPCacheManager shareCacheManager].userDefineLinkPCPort;
+                    textField.font = [UIFont ddp_normalSizeFont];
+                    textField.placeholder = @"例如: 4536";
+                }];
+                
+                [self presentViewController:vc animated:true completion:nil];
+            };
+            
+            return item;
+        }()];
+        
+        [linkSetting.items addObject:^{
+            DDPSettingItem *item = [[DDPSettingItem alloc] initWithReuseClass:[DDPOtherSettingTitleSubtitleTableViewCell class]];
+            item.dequeueReuseCellCallBack = ^(DDPOtherSettingTitleSubtitleTableViewCell *cell) {
+                cell.titleLabel.text = @"重启服务器端口";
+                NSString *port = [DDPCacheManager shareCacheManager].userDefineLinkPCRestartPort;
+                cell.detailLabel.text = port.length > 0 ? port : @"80";
+            };
+            
+            item.didSelectedCellCallBack = ^(NSIndexPath *indexPath) {
+                @strongify(self)
+                if (!self) return;
+                
+                UIAlertController *vc = [UIAlertController alertControllerWithTitle:@"输入重启服务器端口" message:@"留空则默认为80" preferredStyle:UIAlertControllerStyleAlert];
+                @weakify(vc)
+                [vc addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                    @strongify(vc)
+                    if (!vc) return;
+                    
+                    NSString *port = vc.textFields.firstObject.text;
+                    [DDPCacheManager shareCacheManager].userDefineLinkPCRestartPort = port;
+                    [self.tableView reloadData];
+                }]];
+                
+                [vc addAction:[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil]];
+                
+                [vc addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
+                    textField.text = [DDPCacheManager shareCacheManager].userDefineLinkPCRestartPort;
+                    textField.font = [UIFont ddp_normalSizeFont];
+                    textField.placeholder = @"例如: 4536";
+                }];
+                
+                [self presentViewController:vc animated:true completion:nil];
+            };
+            
+            return item;
+        }()];
+        
         _dataSources = arr;
     }
     return _dataSources;

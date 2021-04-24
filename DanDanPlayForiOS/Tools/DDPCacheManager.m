@@ -463,6 +463,42 @@ static NSString *const collectionCacheKey = @"collection_cache";
     return path;
 }
 
+- (void)setUserDefineLANAddress:(NSString *)userDefineLANAddress {
+    [NSUserDefaults.standardUserDefaults setObject:userDefineLANAddress forKey:[self keyWithSEL:_cmd]];
+}
+
+- (NSString *)userDefineLANAddress {
+    NSString *path = (NSString *)[NSUserDefaults.standardUserDefaults objectForKey:[self keyWithSEL:_cmd]];
+    return path;
+}
+
+- (void)setUserDefineWANAddress:(NSString *)userDefineWANAddress {
+    [NSUserDefaults.standardUserDefaults setObject:userDefineWANAddress forKey:[self keyWithSEL:_cmd]];
+}
+
+- (NSString *)userDefineWANAddress {
+    NSString *path = (NSString *)[NSUserDefaults.standardUserDefaults objectForKey:[self keyWithSEL:_cmd]];
+    return path;
+}
+
+- (void)setUserDefineLinkPCPort:(NSString *)userDefineLinkPCPort {
+    [NSUserDefaults.standardUserDefaults setObject:userDefineLinkPCPort forKey:[self keyWithSEL:_cmd]];
+}
+
+- (NSString *)userDefineLinkPCPort {
+    NSString *port = (NSString *)[NSUserDefaults.standardUserDefaults objectForKey:[self keyWithSEL:_cmd]];
+    return port;
+}
+
+- (void)setUserDefineLinkPCRestartPort:(NSString *)userDefineLinkPCRestartPort {
+    [NSUserDefaults.standardUserDefaults setObject:userDefineLinkPCRestartPort forKey:[self keyWithSEL:_cmd]];
+}
+
+- (NSString *)userDefineLinkPCRestartPort {
+    NSString *port = (NSString *)[NSUserDefaults.standardUserDefaults objectForKey:[self keyWithSEL:_cmd]];
+    return port;
+}
+
 #pragma mark -
 - (NSMutableDictionary *)folderCache {
     NSMutableDictionary <NSString *, NSArray <NSString *>*>*dic = (NSMutableDictionary *)[NSUserDefaults.standardUserDefaults objectForKey:[self keyWithSEL:_cmd]];

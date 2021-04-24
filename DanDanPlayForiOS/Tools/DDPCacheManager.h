@@ -199,6 +199,27 @@ typedef NS_ENUM(NSUInteger, DDPFileSortType) {
 @property (copy, nonatomic) NSString *userDefineResRequestDomain;
 
 /**
+ 远程PC局域网地址
+ */
+@property (copy, nonatomic) NSString *userDefineLANAddress;
+
+/**
+ 远程PC广域网地址
+ */
+@property (copy, nonatomic) NSString *userDefineWANAddress;
+
+/**
+ 远程PC媒体库端口
+ */
+@property (copy, nonatomic) NSString *userDefineLinkPCPort;
+
+/**
+ 远程PC弹弹Play重启服务器端口
+ */
+@property (copy, nonatomic) NSString *userDefineLinkPCRestartPort;
+
+
+/**
  文件排序类型
  */
 @property (assign, nonatomic) DDPFileSortType fileSortType;
