@@ -31,6 +31,7 @@
 		207AA0A0262729380003E14D /* DDPSubtitle.m in Sources */ = {isa = PBXBuildFile; fileRef = 207AA09F262729380003E14D /* DDPSubtitle.m */; };
 		207AA0A4262734E70003E14D /* DDPSubtitleCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 207AA0A3262734E70003E14D /* DDPSubtitleCollection.m */; };
 		207AA0A9262876280003E14D /* JQDDPLinkSubtitleManagerPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207AA0A8262876280003E14D /* JQDDPLinkSubtitleManagerPickerViewController.swift */; };
+		20CD9AE9263720D50062EA59 /* LocalNetworkTrigger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CD9AE8263720D50062EA59 /* LocalNetworkTrigger.swift */; };
 		258DB85FF6A45F2A6FD3578E /* libPods-DDPlay_Target-iOS_Only-DDPlay_Review.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53E2B4DF7BAFF1EBB7784AEF /* libPods-DDPlay_Target-iOS_Only-DDPlay_Review.a */; };
 		2A4350E1B6A1BF35E91545BA /* libPods-DDPlay_Target-iOS_Only-DDPlay.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 361F511D4F4E8CE3A646D000 /* libPods-DDPlay_Target-iOS_Only-DDPlay.a */; };
 		3EA04C948B05C030A98E33C6 /* libPods-DDPlay_Target-DDPlay_ToMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C8983450A097DFD30A2DBAB6 /* libPods-DDPlay_Target-DDPlay_ToMac.a */; };
@@ -951,6 +952,7 @@
 		207AA0A3262734E70003E14D /* DDPSubtitleCollection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDPSubtitleCollection.m; sourceTree = "<group>"; };
 		207AA0A6262734F80003E14D /* DDPSubtitleCollection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDPSubtitleCollection.h; sourceTree = "<group>"; };
 		207AA0A8262876280003E14D /* JQDDPLinkSubtitleManagerPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JQDDPLinkSubtitleManagerPickerViewController.swift; sourceTree = "<group>"; };
+		20CD9AE8263720D50062EA59 /* LocalNetworkTrigger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNetworkTrigger.swift; sourceTree = "<group>"; };
 		2200A8C5E60D84DF1B07F2C2 /* Pods-DDPlay_Target-iOS_Only-DDPlay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDPlay_Target-iOS_Only-DDPlay.debug.xcconfig"; path = "Target Support Files/Pods-DDPlay_Target-iOS_Only-DDPlay/Pods-DDPlay_Target-iOS_Only-DDPlay.debug.xcconfig"; sourceTree = "<group>"; };
 		2344548B202E51930721C208 /* Pods-DDPlay_Target-iOS_Only-DDPlay_2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDPlay_Target-iOS_Only-DDPlay_2.release.xcconfig"; path = "Target Support Files/Pods-DDPlay_Target-iOS_Only-DDPlay_2/Pods-DDPlay_Target-iOS_Only-DDPlay_2.release.xcconfig"; sourceTree = "<group>"; };
 		361F511D4F4E8CE3A646D000 /* libPods-DDPlay_Target-iOS_Only-DDPlay.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DDPlay_Target-iOS_Only-DDPlay.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1768,6 +1770,7 @@
 				205D12BA261DD28000D42CE5 /* JQDDPLinkTransmitter.h */,
 				20525FF92628A8850066B7B9 /* JQDDPLinkURLWithToken.m */,
 				20525FFC2628A8900066B7B9 /* JQDDPLinkURLWithToken.h */,
+				20CD9AE8263720D50062EA59 /* LocalNetworkTrigger.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -4058,6 +4061,7 @@
 				8928E36321B81B68007BA84C /* DDPHomePageSearchPackageViewController.m in Sources */,
 				8960971122676D1E00673C28 /* Masonry+DDPTools.m in Sources */,
 				89F6B911201DC5210080B5ED /* DDPSMBInfo+WCDB.mm in Sources */,
+				20CD9AE9263720D50062EA59 /* LocalNetworkTrigger.swift in Sources */,
 				89A42EBA1EA5ECC800FA0DF3 /* DDPRelated.m in Sources */,
 				207AA0A4262734E70003E14D /* DDPSubtitleCollection.m in Sources */,
 				89A1C0191EAF7F4000DB9BE9 /* DDPSelectedTableViewCell.m in Sources */,
@@ -4746,7 +4750,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2021042201;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = MM7G949396;
+				DEVELOPMENT_TEAM = 6H77DJ64UR;
 				ENABLE_BITCODE = NO;
 				EXCLUDED_ARCHS = "";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -4858,7 +4862,7 @@
 					"-framework",
 					"\"UIKit\"",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = top.gyrojeff.dandanplay.distribution.ios;
+				PRODUCT_BUNDLE_IDENTIFIER = "top.gyrojeff-dev.dandanplay.distribution.ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTS_MACCATALYST = NO;
@@ -4882,7 +4886,7 @@
 				CURRENT_PROJECT_VERSION = 2021042201;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = MM7G949396;
+				DEVELOPMENT_TEAM = 6H77DJ64UR;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -4993,7 +4997,7 @@
 					"-framework",
 					"\"UIKit\"",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = top.gyrojeff.dandanplay.distribution.ios;
+				PRODUCT_BUNDLE_IDENTIFIER = "top.gyrojeff-dev.dandanplay.distribution.ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTS_MACCATALYST = NO;

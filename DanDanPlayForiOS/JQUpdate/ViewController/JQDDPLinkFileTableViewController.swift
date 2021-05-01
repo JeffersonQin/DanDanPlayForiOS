@@ -25,6 +25,13 @@ class JQDDPLinkFileTableViewController: UITableViewController {
 //        self.tableView.rowHeight = 135
         self.tableView.estimatedRowHeight = 30
         self.tableView.rowHeight = UITableView.automaticDimension
+        
+        if #available(iOS 12.0, *) {
+            LocalNetworkPermissionService.init().triggerDialog()
+        } else {
+            // Fallback on earlier versions
+        }
+        
         let hud = MBProgressHUD.showAdded(to: self.tableView, animated: true)
         
         hud.label.text = "资源库加载中..."

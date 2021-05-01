@@ -271,6 +271,8 @@
 	<string>请允许弹弹play访问您的相册</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>请允许弹弹play访问您的相册</string>
+	<key>NSLocalNetworkUsageDescription</key>
+	<string>请允许弹弹play访问本地网络设备</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
