@@ -14,6 +14,7 @@
 
 - [bug fix] 修复了无法远程BT下载encodeURI两次导致无法下载
 - [bug fix] 修复DDPMethods中部分网络请求未使用token
+- [bug fix] 修复追番进度中连载中与未连载中标反
 - [warning] 原“局域网设备”功能更改为“SMBv1”
 - [feature] 增加了远程PC的字幕选择功能
 - [feature] 增加了播放器双指双击屏幕显示/隐藏弹幕功能
