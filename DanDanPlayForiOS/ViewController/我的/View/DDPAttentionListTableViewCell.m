@@ -92,7 +92,7 @@
     else {
         self.viewLabel.text = @"未观看";
     }
-    self.onAirLabel.hidden = _infoModel.isOnAir;
+    self.onAirLabel.hidden = !_infoModel.isOnAir;
     DDPBangumiEpisode *episode = infoModel.collection.firstObject;
     self.timeLabel.text = episode.name.length ? episode.name : @" ";
 }
